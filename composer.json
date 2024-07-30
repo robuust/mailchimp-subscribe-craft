@@ -2,7 +2,7 @@
     "name": "aelvan/mailchimp-subscribe",
     "description": "Simple Craft plugin for subscribing to a MailChimp audience.",
     "type": "craft-plugin",
-    "version": "4.0.0",
+    "version": "5.0.0",
     "keywords": [
         "craft",
         "cms",
@@ -23,7 +23,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "craftcms/cms": "^4.0.0",
+        "craftcms/cms": "^4.0.0|^5.0.0",
         "guzzlehttp/guzzle": "^6.5.5|^7.2.0",
         "illuminate/support": "^8.0|^9.0"
     },
@@ -48,5 +48,11 @@
         "components": {
         },
         "class": "aelvan\\mailchimpsubscribe\\MailchimpSubscribe"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }
